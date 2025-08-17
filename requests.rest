@@ -1,0 +1,60 @@
+GET http://localhost:3000/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODVkNTM4M2MzNDFkYjI5ZThjNzVlZSIsIm5hbWUiOiIxMjMiLCJlbWFpbCI6ImFiY2RAZ21haWwuY29tIiwiaWF0IjoxNzUzNjAxMzQ3LCJleHAiOjE3NTM2MDQ5NDd9.OxBiUbKoIWK4j-81zf4ThUCAVz28xb_j_XXPaPZfFa
+
+###
+
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "email" : "moyamis735@aravites.com",
+    "name" : "testuser",
+    "password" : "123"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email" : "moyamis735@yopmail.com",
+    "password" : "123"
+}
+
+
+###
+GET http://localhost:3000/sendmail
+
+
+###
+GET http://localhost:3000/test/123
+
+
+###
+POST http://localhost:3000/products/addProductToFavorites/688496400616420f8e6a4e1f/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OTg0MDQxODFkYzJlNGM4ODhjZWM4NSIsIm5hbWUiOiJ0ZXN0dXNlciIsImVtYWlsIjoibW95YW1pczczNUBhcmF2aXRlcy5jb20iLCJpYXQiOjE3NTQ4MDg0MDIsImV4cCI6MTc1NDgxMjAwMn0.xwCcjDDNXR8tnY5881LeQP8OrvKxP1UAa8RiXFd8KdY
+
+### 
+GET http://localhost:3000/orders/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OThjOWNjMmUzMTY5MGM2ODFjMzc5ZSIsIm5hbWUiOiJ0ZXN0dXNlciIsImVtYWlsIjoibW95YW1pczczNUB5b3BtYWlsLmNvbSIsImlhdCI6MTc1NTQ1MTc5MCwiZXhwIjoxNzU1NDU1MzkwfQ.SdCRVw7LgoywCNlHK7CXru3-X8B10lDr6oL7x9c6K_E
+
+###
+POST http://localhost:3000/orders/add-to-cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OThjOWNjMmUzMTY5MGM2ODFjMzc5ZSIsIm5hbWUiOiJ0ZXN0dXNlciIsImVtYWlsIjoibW95YW1pczczNUB5b3BtYWlsLmNvbSIsImlhdCI6MTc1NTQ1MTc5MCwiZXhwIjoxNzU1NDU1MzkwfQ.SdCRVw7LgoywCNlHK7CXru3-X8B10lDr6oL7x9c6K_E
+Content-Type: application/json
+
+{
+    "productId": "6898dc2d2e31690c681c37a5",
+    "quantity": 5,
+    "price": 100
+}
+
+###
+POST http://localhost:3000/orders/placeorder
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OThjOWNjMmUzMTY5MGM2ODFjMzc5ZSIsIm5hbWUiOiJ0ZXN0dXNlciIsImVtYWlsIjoibW95YW1pczczNUB5b3BtYWlsLmNvbSIsImlhdCI6MTc1NTQ1MTc5MCwiZXhwIjoxNzU1NDU1MzkwfQ.SdCRVw7LgoywCNlHK7CXru3-X8B10lDr6oL7x9c6K_E
+Content-Type: application/json
+
+###
+GET http://localhost:3000/orders/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OThjOWNjMmUzMTY5MGM2ODFjMzc5ZSIsIm5hbWUiOiJ0ZXN0dXNlciIsImVtYWlsIjoibW95YW1pczczNUB5b3BtYWlsLmNvbSIsImlhdCI6MTc1NTQ1NjQ5OCwiZXhwIjoxNzU1NDYwMDk4fQ.oqcdOBU5SjxaV1SxjqfsJD_fdc-bvRS-eEJ5OHeG6sM

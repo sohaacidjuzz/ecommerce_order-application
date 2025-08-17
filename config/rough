@@ -1,0 +1,25 @@
+
+fs.readFile('output.txt', 'utf8' , (err, data)=>{
+    if(err)console.error('Error reading file:', err);
+    else console.log('File content:', data);
+});
+
+// reqListener = (req, res) => {return}
+
+// const server = http.createServer((req , res) =>{
+//     console.log('Request received:', req.url);
+
+//     const url = req.url;
+//     if(url == '/')res.end("Hello");
+//     if(url == '/add')res.end("Hello add");
+//     if(url == '/subtract')res.end("Hello subtract");
+
+
+
+//     res.end('Hello, this is the response from the server!');
+// });
+
+
+// server.listen(3000, () => {
+//     console.log('Server is listening on port 3000');
+// });
